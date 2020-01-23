@@ -10,6 +10,7 @@
 *	Edit this section
 *
 * ======================================================= */
+
 body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.8;
@@ -23,6 +24,29 @@ body {
     height: 100%;
     width: 100%; }
 
+
+.slider-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+.align-items-center {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
 .menu-bar {
       cursor: pointer;
       position: absolute;
@@ -32,10 +56,10 @@ body {
       color: #000;
       font-size: 24px;
     }
-  .container2 {
+.container2 {
       max-width: 540px;
   }
-  .container2 {
+.container2 {
     z-index: -1;
     position: relative;
       width: 100%;
@@ -71,6 +95,11 @@ color:
 ::selection {
   background-color: #f7427f;
   color: #fff;
+}
+
+@media (min-width: 582px){
+.col-md-6 {
+    width: 70%;
 }
 
 .lnr {
@@ -160,7 +189,7 @@ color:
     
 
 a {
-  color: rgb(24, 24, 23);
+  color: rgb(252, 151, 0);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s; }
@@ -179,15 +208,33 @@ ul, ol {
   display: block;
   margin-bottom: 1.5em; }
 
+/*.right{
+  width: 600px;
+  float: left;
+  }*/
 span {
   font-size: 18px;
   color: rgba(114, 114, 114, 0.8); }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.8);
   font-family: "helvetica", Georgia, serif;
-  margin: 0 0 30px 0; }
+  margin: 0 0 30px 0;
+margin-left: 6rem; }
 
+.heading h2 {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "helvetica", Georgia, serif;
+  margin: 0 0 30px 0;
+
+}
+
+h3{
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "helvetica", Georgia, serif;
+  margin: 0 0 30px 0;
+  margin-left: 3rem;
+ }
 ::-webkit-selection {
   color: #fcfcfc;
   background: #b7c2c2; }
@@ -330,7 +377,7 @@ h1, h2, h3, h4, h5, h6 {
           outline: none;
           text-decoration: none; }
       #colorlib-main-nav ul li.active a {
-        color: #CA82F8; }
+        color: rgb(252, 151, 0); }
   #colorlib-main-nav .form-group {
     margin-bottom: 40px;
     position: relative;
@@ -364,7 +411,7 @@ h1, h2, h3, h4, h5, h6 {
     -moz-border-radius: 0;
     -ms-border-radius: 0;
     border-radius: 0;
-    background: #CA82F8;
+    background:rgb(252, 151, 0);
     color: #fff;
     border: none;
     padding: 16px; }
@@ -478,8 +525,8 @@ header {
 }
 
 .header-logo img {
-  width: 240px;
-  height: 240px;
+  width: 280px;
+  height: 220px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -536,7 +583,8 @@ header {
       height: 1px; }
 
 .about-desc {
-  padding-top: 3em; }
+  margin-top: -470px;
+margin-left: 40%;}
   .about-desc h2 {
     line-height: 1.3; }
     .about-desc h2 span {
@@ -551,7 +599,7 @@ header {
   .about-desc .rotate {
     position: absolute;
     top: 7px;
-    left: 30px; }
+    left: -20px; }
     .about-desc .rotate .heading {
       font-family: "Karla", Arial, sans-serif;
       font-size: 14px;
@@ -594,6 +642,7 @@ header {
     font-weight: 400;
     line-height: 1.5;
     margin-bottom: 1.5em;
+    text-align: left;
     color: #000;
     position: relative; }
   .intro-heading span {
@@ -602,16 +651,22 @@ header {
     font-size: 12px;
     letter-spacing: 3px;
     margin-bottom: 10px;
+    text-align: left;
     color: #bfbfbf;
     font-weight: 600; }
 
-.services-img,
+
 .work-img,
 .gallery {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   position: relative; }
+
+  .services-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed; }
 
 .progress-head {
   font-size: 22px; }
@@ -833,7 +888,7 @@ header {
     width: 45%; }
     .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
       display: inline-block; }
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 700px) {
         .services-flex .one-forth .one-third, .services-flex .one-forth .one-forth {
           height: 400px; } }
   .services-flex .one-third, .services-flex .one-forth {
@@ -859,6 +914,13 @@ header {
       display: inline-block;
       width: 1em;
       margin-left: -1em; }
+
+
+      .work-entry .desc p {
+        display: block;
+        margin-bottom: 5em;
+        width: 700px;
+        margin-left: -200px;}
 
 .work-entry {
   display: block;
@@ -1366,11 +1428,11 @@ header {
     list-style: none;
     margin: 0 0 30px 0;
     position: relative;
-    padding-left: 60px; }
+    padding-left: 75px; }
     .contact-info li span {
       position: absolute;
       top: -0.3em;
-      left: 0;
+      left: 20px;
       width: 40px;
       height: 40px;
       background: #fff;
@@ -1386,7 +1448,7 @@ header {
       font-size: 16px;
       color: rgba(0, 0, 0, 0.5); }
     .contact-info li a {
-      color: #CA82F8; }
+      color: rgb(252, 151, 0); }
 
 .form-control {
   -webkit-box-shadow: none;
@@ -1398,6 +1460,7 @@ header {
   border: transparent;
   font-size: 16px;
   font-weight: 300;
+  width: 75%;
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   -ms-border-radius: 0px;
@@ -1406,6 +1469,13 @@ header {
     -webkit-box-shadow: none;
     box-shadow: none;
     border: transparent; }
+
+
+
+@media (min-width: 992px){
+.col-md-6 {
+    width: 100%;
+}
 
 input[type="text"] {
   height: 50px; }
@@ -1418,7 +1488,7 @@ input[type="text"] {
 
 .colorlib-social-icons i {
   font-size: 24px;
-  color: rgb(203, 248, 2); }
+  color: rgb(252, 151, 0); }
 
 #footer {
   padding: 8em 0;
@@ -1435,7 +1505,7 @@ input[type="text"] {
     text-decoration: none !important; }
   #footer p.colorlib-social-icons i {
     font-size: 24px;
-    color: #CA82F8; }
+    color: rgb(252, 151, 0); }
   #footer p .block {
     color: #1a1a1a;
     font-size: 14px; }
@@ -1469,4 +1539,5 @@ input[type="text"] {
     border-radius: 30px; }
 
 .js .animate-box {
-  opacity: 0; }
+  opacity: 0;
+}
